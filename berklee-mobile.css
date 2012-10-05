@@ -12,6 +12,8 @@ body.landing{}
 overflow: visible;
 }
 img.item-full {
+	background-color: #fff;
+	padding: 4px;
 	float: right;
 	margin: .3em;
 	width: 40%;
