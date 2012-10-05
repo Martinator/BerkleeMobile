@@ -11,47 +11,83 @@
 	</head>
 	<body>
 
-<div data-role="page" data-theme="b">
-<div data-role="header" data-position="fixed">
-	<a href="index.html" data-icon="back">Logout</a>
-	<h1>Berklee Encore Gala</h1>
-	<a href="main.html" data-icon="refresh" >Refresh</a>
+		<div data-role="page" data-theme="b">
+			<div data-role="header" data-position="fixed">
+				<a href="home.html" data-icon="home" rel="external">Home</a>
+				<h1>Berklee Encore Gala</h1>
+				<!--<a href="main.html" data-icon="refresh" >Refresh</a>-->
 
+			</div><!-- /header -->
 
+			<div data-role="content">
 
-</div><!-- /header -->
+				<form action="demo_mobile_bid.php?id=28&docent=" method="POST">
 
+					<ul data-role="listview" data-inset="true"  data-theme="c" class="item-detail">
+						<li >
+							<h3>Yamaha NU1 Piano</h3>
 
-	<div data-role="content">	
-		
-		
-		
+							<p><img class="item-full" src="http://gala.berklee.edu/item_images/NU1.jpg" />The Yamaha NU1 is a new hybrid piano that combines the traditional sound and feel of an acoustic instrument with the industry's most innovative digital technology. It offers the warmth and natural presence of an acoustic instrument in a stylish, compact form. To complement its sparkling highs and full-bodied bass, the NU1 utilizes newly-developed acoustic technology to reproduce the characteristic resonance felt when playing an acoustic piano. The elegant simplicity of the NU1 blends effortlessly into any setting, adding an air of distinction without being imposing. Please note: Plexiglass front for display only. Piano will be delivered with solid black front.
+							</p>
 
-		
-		<ul data-role="listview" data-inset="true"  data-theme="b" class="">
-			<li >
-				<a href="#">
-					<img src="images/donate.jpg"/>
-					<h3>Fund-A-Future</h3>	
-					<p>I have not bid on any items.</p>
+							<h4>Donor 1: Yamaha Corporation of America</h4>
+							<p>
+								The minimum bid to take the lead is $ 3,950
+							</p>
+
+						</li>
+						<li>
+							Retail value: $5,499
+						</li>
+						<li>
+							Opening bid: $ 2,000
+						</li>
+						<li>
+							Current bid: $ 3,850
+						</li>
+						<li>
+							<label for="bid_amount">Your bid:</label>
+							<input type="text" name="bid_amount" />
+						</li>
+					</ul>
+
+					<a href="#bid-result" data-theme="a" data-role="button" data-rel="dialog">Bid!</a>
+					<!-- <input type="submit" data-theme="a" value="Bid!"> -->
+
+				</form>
+			</div><!-- /content -->
+
+			<div data-role="footer" data-position="fixed" data-theme="b">
+
+				<div class="ui-bar ui-bar-b">
+					<h3>Bidder: <a href="#" data-role="button" data-mini="true" data-inline="true">Martin Middelmann</a></h3>
+				</div>
+			</div><!-- /footer -->
+		</div><!-- /page -->
+
+		<div id="bid-result" data-role="page" data-theme="b">
+			<div data-role="header" data-position="fixed">
+
+				<h1>Bid Result</h1>
+				<!--<a href="main.html" data-icon="refresh" >Refresh</a>-->
+
+			</div><!-- /header -->
+
+			<div data-role="content">
+<h2>Martin Middelmann, you currently have the winning Bid!</h2>
+				<ul   data-role="listview" data-inset="true"  data-theme="c">
+					<li>
+						
+							<img src="http://gala.berklee.edu/item_images/NU1.jpg" />
+							<h3>Yamaha NU1 Piano</h3>
+							<h4>Your bid: $3,850</h4>
+							
+						
+					</li>
+					</ul>
 					
-					
-					
-					
-				</a>
-			</li>
-		</ul>
-	</div><!-- /content -->
-
-	<div data-role="footer" data-position="fixed" data-theme="b">
-		
-		<div class="ui-bar ui-bar-b">
-	<h3>Bidder: <a href="#" data-role="button" data-mini="true" data-inline="true">Martin Middelmann</a></h3>
-</div>
-	</div><!-- /footer -->
-</div><!-- /page -->
-
-
-
+					<a href="home.html" rel="external" data-role="button" data-theme="a">View more items!</a>
+			</div><!-- /content -->
+		</div><!-- /page -->
 	</body>
 </html>
