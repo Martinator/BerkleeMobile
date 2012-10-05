@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Berklee Gala</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+		<link rel="stylesheet" href="css/themes/BerkleeGala.css" />
+		<link rel="stylesheet" href="berklee-mobile.css" />
+		<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+	</head>
+	<body>
+
+		<div data-role="page" data-theme="b">
+			<div data-role="header" data-position="fixed">
+				<a href="home.html" data-icon="home" rel="external">Home</a>
+				<h1>Fund-A-Future</h1>
+				<!--<a href="main.html" data-icon="refresh" >Refresh</a>-->
+
+			</div><!-- /header -->
+
+			<div data-role="content">
+				<form action="demo_mobile_donate.php" method="POST">
+					<h3>Support these worthy initiatives at Berklee!</h3>
+
+					<div data-role="fieldcontain">
+						<fieldset data-role="controlgroup">
+							<legend>
+								Scholarships
+							</legend>
+							<label for="half_scholarship">Tuition &#43; Room &#38; Board scholarship ($8,000 each)</label>
+
+							<select name="half_scholarship" id="half_scholarship">
+								<option value="">Tuition &#43; Room &#38; Board</option>
+								<option value="1">1 &times; $8,000</option>
+								<option value="2">2 &times; $8,000</option>
+								<option value="3">3 &times; $8,000</option>
+								<option value="4">4 &times; $8,000</option>
+								<option value="5">5 &times; $8,000</option>
+								<option value="6">6 &times; $8,000</option>
+								<option value="7">7 &times; $8,000</option>
+								<option value="8">8 &times; $8,000</option>
+								<option value="9">9 &times; $8,000</option>
+								<option value="10">10 &times; $8,000</option>
+							</select>
+
+							<label for="full_scholarship">Tuition-only scholarship ($5,000 each)</label>
+
+							<select name="full_scholarship" id="full_scholarship">
+								<option value="">Tuition-only</option>
+								<option value="1">1 &times; $5,000</option>
+								<option value="2">2 &times; $5,000</option>
+								<option value="3">3 &times; $5,000</option>
+								<option value="4">4 &times; $5,000</option>
+								<option value="5">5 &times; $5,000</option>
+								<option value="6">6 &times; $5,000</option>
+								<option value="7">7 &times; $5,000</option>
+								<option value="8">8 &times; $5,000</option>
+								<option value="9">9 &times; $5,000</option>
+								<option value="10">10 &times; $5,000</option>
+							</select>
+						</fieldset>
+					</div>
+
+					<div data-role="fieldcontain" class="ui-hide-label">
+						<label for="other_amount">Other amount</label>
+						<input type="number" name="other_amount" id="other_amount"  placeholder="Other Amount" value=""  />
+					</div>
+					<input type="submit" data-theme="a"  value="DONATE!">
+				</form>
+			</div><!-- /content -->
+
+		</div><!-- /page -->
+
+	</body>
+</html>
