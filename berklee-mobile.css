@@ -6,3 +6,19 @@ body.landing{}
 	width: 400px;
 	margin: 0px auto 20px;
 }
+
+
+.ui-li-thumb, 
+.ui-listview .ui-li-icon {
+	/*
+	max-height: 57px;
+	max-width: 57px;
+	*/
+}
+
+.categories .ui-li-has-thumb .ui-btn-inner a.ui-link-inherit, 
+.categories .ui-li-static.ui-li-has-thumb {
+min-height: 56px;
+padding: 0px 15px 0px 75px;
+padding-left: 75px;
+}
