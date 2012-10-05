@@ -21,17 +21,22 @@ img.item-full {
 	border: 1px solid #000;
 }
 
-.ui-li-thumb, 
-.ui-listview .ui-li-icon {
-	/*
-	max-height: 57px;
-	max-width: 57px;
-	*/
+[data-theme^="a"] .ui-li-thumb, 
+.ui-listview [data-theme^="a"] .ui-li-icon {
+	
+	max-height: 42px;
 }
-
-.categories .ui-li-has-thumb .ui-btn-inner a.ui-link-inherit, 
-.categories .ui-li-static.ui-li-has-thumb {
+[data-theme^="c"] .ui-li-thumb, 
+.ui-listview [data-theme^="c"] .ui-li-icon {
+	
+	max-height: 56px;
+}
+.categories .ui-li-has-thumb[data-theme^="a"] .ui-btn-inner a.ui-link-inherit, 
+.categories .ui-li-static.ui-li-has-thumb[data-theme^="a"] {
 min-height: 56px;
+min-height: 42px;
 padding: 0px 15px 0px 75px;
 padding-left: 75px;
+padding: 0px 15px 0px 65px;
+padding-left: 65px;
 }

@@ -20,7 +20,7 @@
 
 			<div data-role="content">
 
-				<ul data-role="listview"  data-theme="a" data-inset="true" class="categories">
+				<ul data-role="listview"  data-theme="a" class="categories">
 					<li>
 						<a href="#"> <img src="images/button-instruments.jpg"/> <h3>Instruments &amp; Gear</h3> </a>
 						<ul data-theme="c">
@@ -116,9 +116,7 @@
 					<li>
 						<a href="#"> <img src="images/button-events.jpg"/> <h3>Events</h3> </a>
 					</li>
-				</ul>
-				<ul data-role="listview" data-inset="true"  data-theme="c" class="">
-					<li >
+					<li data-theme="c" >
 						<a href="fund-a-future.html" rel="external"> <img src="images/donate.jpg"/> <h3>Fund-A-Future</h3>
 						<p>
 							I have not bid on any items.
@@ -127,10 +125,19 @@
 				</ul>
 			</div><!-- /content -->
 
-			<div data-role="footer" data-position="fixed" data-theme="b">
-				<div class="ui-bar ui-bar-a">
-					<h3>Martin Middelmann: <a href="bids.html" rel="external" data-rel="dialog" data-role="button" data-theme="a" data-mini="true" data-inline="true">Bids: 2</a><a href="bids-winning.html" rel="external" data-rel="dialog" data-theme="a" data-role="button" data-mini="true" data-inline="true">Winning: 1</a></h3>
-				</div>
+			<div data-role="footer" data-position="fixed" data-theme="c">
+				<div data-role="navbar">
+					<ul data-theme="c">
+						<li>
+							<a href="bids.html" rel="external" data-theme="a" data-rel="dialog" data-role="button"  data-mini="true" data-inline="true">Bids (losing): 2</a>
+						</li>
+						<li>
+							<a href="bids-winning.html" rel="external" data-rel="dialog"  data-role="button" data-mini="true" data-inline="true">Winning: 1</a>
+						</li>
+					</ul>
+				</div><!-- /navbar -->
+				
+				
 			</div><!-- /footer -->
 		</div><!-- /page -->
 
