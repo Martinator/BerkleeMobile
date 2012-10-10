@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Berklee Gala</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+		<link rel="stylesheet" href="css/themes/BerkleeGala.css" />
+		<link rel="stylesheet" href="berklee-mobile.css" />
+		<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+	</head>
+	<body>
+
+		<div data-role="page" class="landing" data-theme="a">
+
+			<div data-role="content">
+
+				<img src="images/login-header2.jpg" class="logo" />
+
+				<form action="index.php" method="POST">
+
+					<h2>(Always help the guest)</h2>
+					<input type="hidden" name="submission" value="1">
+
+					<div data-role="fieldcontain" class="ui-hide-label">
+
+						<label for="fname">First Name</label>
+						<input type="text" name="fname" id="fname" data-theme="b" placeholder="First Name" />
+
+					</div>
+					<div data-role="fieldcontain" class="ui-hide-label">
+
+						<label for="lname">Last Name</label>
+						<input type="text" name="lname" id="lname" data-theme="b"  placeholder="Last Name" />
+
+					</div>
+
+					<!-- this button is for demo/prototype purposes only -->
+					<a href="docent-guest-list.html" data-role="button" rel="external" data-theme="b">Find Guest</a>
+
+					<!-- The Actual control
+
+					<input type="submit" value="Find Guest" data-theme="b">
+
+					-->
+
+				</form>
+			</div><!-- /content -->
+
+		</div><!-- /page -->
+
+	</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Berklee Gala</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+		<link rel="stylesheet" href="css/themes/BerkleeGala.css" />
+		<link rel="stylesheet" href="berklee-mobile.css" />
+		<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+	</head>
+	<body>
+
+		<div data-role="page" class="landing" data-theme="a">
+
+			<div data-role="header" data-position="fixed">
+				<a href="docent-index.html" data-icon="back"  data-rel="back">Find Guest</a>
+				<h1>Guest List</h1>
+				<a href="#add-guest" data-icon="plus" >Add Guest</a>
+
+			</div><!-- /header -->
+
+			<div data-role="content">
+
+				<ul data-role="listview"  data-theme="a">
+					<li  data-role="list-divider">
+						Which guest are you looking for?
+					</li>
+					<li>
+						<a href="home.html" rel="external"> <h3>Martin Middelmann</h3>
+						<p class="ui-li-aside">
+							Bidder #433371
+						</p>
+						<p>
+							Investors Bank and Trust
+						</p>
+						<p>
+							617.937.6700
+						</p> </a>
+					</li>
+					<li>
+						<a href="home.html" rel="external"> <h3>Martin Middelmann</h3>
+						<p class="ui-li-aside">
+							Bidder #433371
+						</p>
+						<p>
+							Investors Bank and Trust
+						</p>
+						<p>
+							617.937.6700
+						</p> </a>
+					</li>
+					<li>
+						<a href="home.html" rel="external"> <h3>Martin Middelmann</h3>
+						<p class="ui-li-aside">
+							Bidder #433371
+						</p>
+						<p>
+							Investors Bank and Trust
+						</p>
+						<p>
+							617.937.6700
+						</p> </a>
+					</li>
+					<li>
+						<a href="home.html" rel="external"> <h3>Martin Middelmann</h3>
+						<p class="ui-li-aside">
+							Bidder #433371
+						</p>
+						<p>
+							Investors Bank and Trust
+						</p>
+						<p>
+							617.937.6700
+						</p> </a>
+					</li>
+					<li>
+						<a href="home.html" rel="external"> <h3>Martin Middelmann</h3>
+						<p class="ui-li-aside">
+							Bidder #433371
+						</p>
+						<p>
+							Investors Bank and Trust
+						</p>
+						<p>
+							617.937.6700
+						</p> </a>
+					</li>
+					<li>
+						<a href="home.html" rel="external"> <h3>Martin Middelmann</h3>
+						<p class="ui-li-aside">
+							Bidder #433371
+						</p>
+						<p>
+							Investors Bank and Trust
+						</p>
+						<p>
+							617.937.6700
+						</p> </a>
+					</li>
+					<li>
+						<a href="home.html" rel="external"> <h3>Martin Middelmann</h3>
+						<p class="ui-li-aside">
+							Bidder #433371
+						</p>
+						<p>
+							Investors Bank and Trust
+						</p>
+						<p>
+							617.937.6700
+						</p> </a>
+					</li>
+					<li>
+						<a href="home.html" rel="external"> <h3>Martin Middelmann</h3>
+						<p class="ui-li-aside">
+							Bidder #433371
+						</p>
+						<p>
+							Investors Bank and Trust
+						</p>
+						<p>
+							617.937.6700
+						</p> </a>
+					</li>
+					<li>
+						<a href="home.html" rel="external"> <h3>Martin Middelmann</h3>
+						<p class="ui-li-aside">
+							Bidder #433371
+						</p>
+						<p>
+							Investors Bank and Trust
+						</p>
+						<p>
+							617.937.6700
+						</p> </a>
+					</li>
+					<li>
+						<a href="home.html" rel="external"> <h3>Martin Middelmann</h3>
+						<p class="ui-li-aside">
+							Bidder #433371
+						</p>
+						<p>
+							Investors Bank and Trust
+						</p>
+						<p>
+							617.937.6700
+						</p> </a>
+					</li>
+
+			</div><!-- /content -->
+
+		</div><!-- /page -->
+
+		<div data-role="page" id="add-guest" class="landing" data-theme="c">
+
+			<div data-role="header">
+				<a href="" data-icon="delete"  data-rel="back">Cancel</a>
+				<h1>Add Guest</h1>
+		
+
+				</div><!-- /header -->
+
+				<div data-role="content">
+
+				<form action="index.php" method="POST">
+
+				<div data-role="fieldcontain" >
+					<label for="fname">First Name</label>
+					<input type="text" name="fname" id="fname" placeholder="First Name"/>
+				</div>
+				<div data-role="fieldcontain" >
+					<label for="lname">Last Name</label>
+					<input type="text" name="lname" id="lname" placeholder="Last Name"/>
+				</div>
+				<div data-role="fieldcontain" >
+					<label for="phone">Phone</label>
+					<input type="tel" name="phone" id="phone" placeholder="Phone"/>
+				</div>
+
+				<div data-role="fieldcontain" >
+					<label for="email">Email</label>
+					<input type="email" name="email" id="email" placeholder="Email"/>
+				</div>
+				<a href="home.html" data-role="button" rel="external" data-theme="a">Add Guest</a>
+					
+					<!-- The Actual control
+						
+						<input type="submit" value="Add Guest" data-theme="a"/>
+						
+					-->
+
+					
+				
+
+		</form>
+
+		</div><!-- /content -->
+
+		</div><!-- /page -->
+
+	</body>
+</html>

@@ -40,3 +40,7 @@ padding-left: 75px;
 padding: 0px 15px 0px 65px;
 padding-left: 65px;
 }
+
+.ui-field-contain.ui-body.ui-br {
+	border-bottom: none;
+}
