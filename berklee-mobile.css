@@ -20,7 +20,7 @@ img.item-full {
 	height: auto;
 	border: 1px solid #000;
 }
-
+/*
 [data-theme^="a"] .ui-li-thumb, 
 .ui-listview [data-theme^="a"] .ui-li-icon {
 	
@@ -33,6 +33,24 @@ img.item-full {
 }
 .categories .ui-li-has-thumb[data-theme^="a"] .ui-btn-inner a.ui-link-inherit, 
 .categories .ui-li-static.ui-li-has-thumb[data-theme^="a"] {
+min-height: 56px;
+min-height: 42px;
+padding: 0px 15px 0px 75px;
+padding-left: 75px;
+padding: 0px 15px 0px 65px;
+padding-left: 65px;
+}
+
+*/
+
+.ui-li-thumb, 
+.ui-listview  .ui-li-icon {
+	
+	max-height: 42px;
+}
+
+.categories .ui-li-has-thumb .ui-btn-inner a.ui-link-inherit, 
+.categories .ui-li-static.ui-li-has-thumb {
 min-height: 56px;
 min-height: 42px;
 padding: 0px 15px 0px 75px;
