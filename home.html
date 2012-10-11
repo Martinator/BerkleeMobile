@@ -120,9 +120,8 @@
 						<a href="#"> <img src="images/button-events.jpg"/> <h3>Events</h3> </a>
 					</li>
 					<li data-theme="c" >
-						<a href="fund-a-future.html" rel="external"> <img src="images/donate.jpg"/> <h3>Fund-A-Future</h3>
-						<!--<p>
-							I have not bid on any items.
+						<a href="fund-a-future.html" rel="external"> <img src="images/donate.jpg"/> <h3>Fund-A-Future</h3> <!--<p>
+						I have not bid on any items.
 						</p>--> </a>
 					</li>
 				</ul>
@@ -132,16 +131,33 @@
 				<div data-role="navbar">
 					<ul data-theme="c">
 						<li>
-							<a href="bids.html" rel="external" data-theme="a" data-rel="dialog" data-role="button"  data-mini="true" data-inline="true">Losing Bids: 2</a>
+							<a href="#popupBasic"  data-theme="a" data-rel="popup" data-role="button"  data-mini="true" data-inline="true" data-transition="pop" data-position-to="window" >Losing Bids: 2</a>
 						</li>
 						<li>
 							<a href="bids-winning.html" rel="external" data-rel="dialog"  data-role="button" data-mini="true" data-inline="true">Winning Bids: 1</a>
 						</li>
 					</ul>
 				</div><!-- /navbar -->
-				
-				
+
 			</div><!-- /footer -->
+
+			<!-- popup -->
+			<div data-role="popup" id="popupBasic" data-theme="b"  >
+				<a href="#" data-rel="back" data-role="button" data-theme="c" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+				<h3>You have just been out bid on this item!<h3>
+				<ul data-theme="c" data-role="listview">
+					<li>
+						<a href="item.html" rel="external"> <img src="http://gala.berklee.edu/item_images/NU1.jpg" /> <h3>Yamaha NU1 Piano</h3>
+						<p>
+							Current bid: $3,850
+						</p>
+						<p>
+							Bid now!
+						</p> </a>
+					</li>
+				</ul>
+			</div>
+			<!-- /popup -->
 		</div><!-- /page -->
 
 	</body>

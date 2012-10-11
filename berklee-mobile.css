@@ -43,8 +43,8 @@ padding-left: 65px;
 
 */
 
-.ui-li-thumb, 
-.ui-listview  .ui-li-icon {
+.categories .ui-li-thumb, 
+.categories.ui-listview  .ui-li-icon {
 	
 	max-height: 42px;
 }
